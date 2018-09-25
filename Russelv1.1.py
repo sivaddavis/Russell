@@ -1,10 +1,10 @@
 import random
 import requests
+import secrets
 from discord import Game
 from discord.ext.commands import Bot
 
 BOT_PREFIX = ("?", "!")
-TOKEN = "NDkzNTkyMTU2OTA5NjAwNzc1.Donbrw.qRiZxTJ_Y5Hhp6RSBm0-TpVzZog"
 
 client = Bot(command_prefix=BOT_PREFIX)
 
@@ -42,6 +42,6 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('How can I assist?')
-    print('------')	
+    print('------')
 
-client.run(TOKEN)
+client.run(secrets.TOKEN)
